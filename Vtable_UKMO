@@ -1,0 +1,33 @@
+GRIB1| Level| From |  To  | metgrid  | metgrid | metgrid                                 |GRIB2|GRIB2|GRIB2|GRIB2|
+Param| Type |Level1|Level2| Name     | Units   | Description                             |Discp|Catgy|Param|Level|
+-----+------+------+------+----------+---------+-----------------------------------------+-----------------------+
+  33 | 118  |   *  |      | UU       | m s-1   | U                                       |  0  |  2  |  2  | 118 |
+  34 | 118  |   *  |      | VV       | m s-1   | V                                       |  0  |  2  |  3  | 118 |
+  11 | 118  |   *  |      | TT       | K       | Temperature                             |  0  |  0  |  0  | 118 |
+     | 118  |   *  |      | SPECHUMD | kg kg-1 | Specific Humidity                       |  0  |  1  |  0  | 118 |
+     | 118  |   *  |      | SPECCLDL | kg kg-1 | Specific Cloud Liquid Water content     |  0  |  1  | 83  | 118 |
+  53 | 118  |   *  |      | SPECCLDF | kg kg-1 | Specific Cloud Frozen Water content     |  0  |  1  | 84  | 118 |
+   1 | 118  |   *  |      | THETA    | K       |                                         |  0  |  0  |  2  | 118 |
+     | 118  |   *  |      | PRESSURE | Pa      | Pressure Exner                          |  0  |  3  |     | 118 |
+     | 118  |   *  |      | PRHO     | Pa      | Pressure Rho (u and v)                  |  0  |  3  |  0  | 118 |
+  65 |   1  |   0  |      | SNOW     | kg m-2  | Water equivalent snow depth             |  0  |  1  | 60  |   1 |
+     |   1  |   0  |      | SNOWH    | m       | Physical Snow Depth                     |  0  |  1  |     |   1 |
+  81 |   1  |   0  |      | LANDSEA  | proprtn | Land/Sea flag (1=land, 0 or 2=sea)      |  2  |  0  |  0  |   1 |
+  11 |   1  |   0  |      | SKINTEMP | K       | Skin temperature (can use for SST also) |  0  |  0  | 17  |   1 |
+  91 |   1  |   0  |      | SEAICE   | Fraction| Sea ice coverage fraction               | 10  |  2  |  0  |   1 |
+ 148 |   1  |   0  |      | SOILHGT  | m       | Topography Elevation                    |  2  |  0  |  7  |   1 |
+   1 |   1  |   0  |      | PSFC     | Pa      | Surface Pressure                        |  0  |  3  |  0  |   1 |
+   7 | 118  |   *  |      | HGT      | m       | Height                                  |  0  |  3  |  5  | 118 |
+   2 | 101  |   0  |      | PMSL     | Pa      | Sea-level Pressure                      |  0  |  3  |  1  |   1 |
+  33 | 103  |  10  |      | UU       | m s-1   | U                 at 10 m               |  0  |  2  |  2  | 103 |
+  34 | 103  |  10  |      | VV       | m s-1   | V                 at 10 m               |  0  |  2  |  3  | 103 |
+  11 | 103  |   2  |      | TT       | K       | Temperature       at 2 m                |  0  |  0  |  0  | 103 |
+  86 | 106  |   0  |  10  | SM000010 | fraction| Soil Moist 0-10 cm below grn layer      |  2  |  3  | 20  | 106 |
+  86 | 106  |  10  |  35  | SM010035 | fraction| Soil Moist 10-35 cm below grn layer     |  2  |  3  | 20  | 106 |
+  86 | 106  |  35  | 100  | SM035100 | fraction| Soil Moist 35-100 cm below grn layer    |  2  |  3  | 20  | 106 |
+  86 | 106  | 100  | 300  | SM100300 | fraction| Soil Moist 100-300 cm below gr layer    |  2  |  3  | 20  | 106 |
+  85 | 106  |   0  |  10  | ST000010 | K       | T 0-10 cm below ground layer            |  2  |  3  | 18  | 106 |
+  85 | 106  |  10  |  35  | ST010035 | K       | T 10-35 cm below ground layer           |  2  |  3  | 18  | 106 |
+  85 | 106  |  35  | 100  | ST035100 | K       | T 35-100 cm below ground layer          |  2  |  3  | 18  | 106 |
+  85 | 106  | 100  | 300  | ST100300 | K       | T 100-300 cm below ground layer         |  2  |  3  | 18  | 106 |
+-----+------+------+------+----------+---------+-----------------------------------------+-------------------------+
