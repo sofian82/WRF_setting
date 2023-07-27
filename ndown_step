@@ -1,0 +1,17 @@
+1-way nest down
+
+1) Create namelist.wps 
+2) Set up new domain by run geogrid.exe (only for the first time)
+3) Link input from GFS/UKMO to working directory (GRIBFILE.AAA,...)
+4) Set "active_grid" option to "true" in namelist.wps (inside &share namelist)
+5) Run ungrib.exe 
+6) Run metgrid.exe (output met_em.d01.<date>,...)
+7) Set "run_hours   = 0" in namelist.input (Means that start_year,start_month,start_day,start_hour is the same as end_year,end_month,end_day,end_hour )
+8) Run real.exe (output wrfinput_d01,...)
+9) rename wrfinput_d02 to wrfndi_d02
+10) Link previous WRF output to current working directory (smallest domain)
+11) Set correct run hours & date in namelist.input
+12) Run ndown.exe
+13) Rename wrfinput_d02 to wrfinput_d01 and wrfbdy_d02 wrfbdy_d01
+14) Set correct domain setting for the new domain in namelist.input (max_dom=1,  e_we, e_sn, dx and dy 
+15) Run wrf.exe
